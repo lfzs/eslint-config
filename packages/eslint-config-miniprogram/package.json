@@ -1,0 +1,15 @@
+{
+  "name": "@jzfe/eslint-config-miniprogram",
+  "version": "1.0.0",
+  "main": "index.js",
+  "files": [
+    ".eslintrc.json",
+    "index.js",
+    "package.json"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/lfzs/eslint-config#readme",
+  "dependencies": {
+    "@jzfe/eslint-config-vanilla": "workspace:*"
+  }
+}

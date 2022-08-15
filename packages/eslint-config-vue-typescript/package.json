@@ -1,0 +1,18 @@
+{
+  "name": "@jzfe/eslint-config-vue-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "files": [
+    ".eslintrc.json",
+    "index.js",
+    "package.json"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/lfzs/eslint-config#readme",
+  "dependencies": {
+    "@jzfe/eslint-config-vue": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
+    "@typescript-eslint/parser": "^5.30.6",
+    "vue-eslint-parser": "^9.0.3"
+  }
+}

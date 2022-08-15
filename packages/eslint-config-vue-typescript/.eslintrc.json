@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "@jzfe/eslint-config-vue",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@babel/eslint-parser",
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/member-delimiter-style": [2, { "multiline": { "delimiter": "comma" }, "singleline": { "delimiter": "comma" } }],
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/type-annotation-spacing": 2,
+
+    // Extension Rules
+    // 一些声明规则对 .ts 无效时， 需要在此添加
+    // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#extension-rules
+    "func-call-spacing": 0,
+    "@typescript-eslint/func-call-spacing": 2,
+
+    "no-dupe-class-members": 0,
+    "@typescript-eslint/no-dupe-class-members": 2
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": 0
+      }
+    }
+  ]
+}

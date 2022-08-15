@@ -1,0 +1,15 @@
+{
+  "name": "@jzfe/eslint-config-vanilla",
+  "version": "1.0.0",
+  "main": "index.js",
+  "files": [
+    ".eslintrc.json",
+    "index.js",
+    "package.json"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/lfzs/eslint-config#readme",
+  "dependencies": {
+    "@babel/eslint-parser": "^7.17.0"
+  }
+}

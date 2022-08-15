@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "@jzfe/eslint-config-vanilla"
+  ],
+  "parser": "@babel/eslint-parser",
+  "globals": {
+    "App": "readonly",
+    "wx": "readonly",
+    "getApp": "readonly",
+    "getCurrentPages": "readonly",
+    "Page": "writable",
+    "Component": "writable"
+  }
+}
