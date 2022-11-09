@@ -3,19 +3,6 @@
     "@jzfe/eslint-config-vanilla",
     "plugin:vue/vue3-strongly-recommended"
   ],
-  "env": {
-    "node": true,
-    "browser": true
-  },
-  "parser": "vue-eslint-parser",
-  "parserOptions": {
-    "parser": "@babel/eslint-parser",
-    "ecmaVersion": "latest",
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
   "rules": {
     "vue/no-lone-template": 1,
     "vue/this-in-template": 2,
@@ -33,7 +20,6 @@
     "vue/no-useless-v-bind": 1,
     "vue/prefer-separate-static-class": 1,
     "vue/prefer-true-attribute-shorthand": 1,
-    "vue/script-indent": 1,
 
     "vue/array-bracket-spacing": 1,
     "vue/arrow-spacing": 1,
@@ -61,18 +47,11 @@
     "vue/space-infix-ops": 1,
     "vue/template-curly-spacing": 1,
 
+    "vue/html-indent": [1, 2, { "baseIndent": 0 }],
     "vue/max-attributes-per-line": [2, { "singleline": 5 }],
     "vue/multiline-html-element-content-newline": [2, { "allowEmptyLines": true }],
     "vue/singleline-html-element-content-newline": 0
   },
-  "overrides": [
-    {
-      "files": ["*.vue"],
-      "rules": {
-        "indent": 0
-      }
-    }
-  ],
   "globals": {
     "defineProps": "readonly",
     "defineEmits": "readonly",
