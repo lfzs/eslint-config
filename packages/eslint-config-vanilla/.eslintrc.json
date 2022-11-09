@@ -97,5 +97,9 @@
     "switch-colon-spacing": 1,
     "template-curly-spacing": 1,
     "template-tag-spacing": 1
-  }
+  },
+  "ignorePatterns": [
+    "node_modules/**",
+    "/dist/**"
+  ]
 }
