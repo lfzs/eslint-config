@@ -6,6 +6,8 @@
   "rules": {
     "vue/multi-word-component-names": 0,
 
+    "vue/attribute-hyphenation": [1, "never"],
+
     "vue/no-lone-template": 1,
     "vue/this-in-template": 2,
 

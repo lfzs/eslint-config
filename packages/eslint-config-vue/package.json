@@ -1,6 +1,6 @@
 {
   "name": "@jzfe/eslint-config-vue",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "main": "index.js",
   "files": [
     ".eslintrc.json",
