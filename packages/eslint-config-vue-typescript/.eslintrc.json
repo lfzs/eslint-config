@@ -3,19 +3,6 @@
     "@jzfe/eslint-config-vue",
     "plugin:@typescript-eslint/recommended"
   ],
-  "env": {
-    "node": true,
-    "browser": true
-  },
-  "parser": "vue-eslint-parser",
-  "parserOptions": {
-    "parser": "@babel/eslint-parser",
-    "ecmaVersion": "latest",
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "@typescript-eslint/member-delimiter-style": [2, { "multiline": { "delimiter": "comma" }, "singleline": { "delimiter": "comma" } }],
