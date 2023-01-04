@@ -11,6 +11,6 @@
   "homepage": "https://github.com/lfzs/eslint-config#readme",
   "dependencies": {
     "@jzfe/eslint-config-vue": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.42.1"
+    "@typescript-eslint/eslint-plugin": "^5.48.0"
   }
 }
