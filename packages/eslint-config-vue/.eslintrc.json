@@ -10,7 +10,7 @@
     "vue/this-in-template": 2,
 
     "vue/component-api-style": 2,
-    "vue/component-name-in-template-casing": [1, "PascalCase", { "registeredComponentsOnly": false }],
+    "vue/component-name-in-template-casing": 1,
     "vue/component-options-name-casing": 1,
     "vue/custom-event-name-casing": 1,
     "vue/match-component-import-name": 1,
