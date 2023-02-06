@@ -9,9 +9,6 @@
     "@typescript-eslint/no-explicit-any": 0,
     "@typescript-eslint/type-annotation-spacing": 2,
 
-    // Extension Rules
-    // 一些声明规则对 .ts 无效时， 需要在此添加
-    // https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#extension-rules
     "func-call-spacing": 0,
     "@typescript-eslint/func-call-spacing": 2,
 
