@@ -13,7 +13,6 @@
     "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
-      "impliedStrict": true,
       "jsx": true
     }
   },
@@ -83,7 +82,7 @@
     "key-spacing": 1,
     "keyword-spacing": 1,
     "linebreak-style": 1,
-    "no-extra-parens": 1,
+    "no-extra-parens": [1, "functions"],
     "no-multi-spaces": 1,
     "no-multiple-empty-lines": [1, { "max": 1, "maxBOF": 0, "maxEOF": 0 }],
     "no-tabs": 2,

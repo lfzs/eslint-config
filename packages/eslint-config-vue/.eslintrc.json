@@ -42,7 +42,7 @@
     "vue/key-spacing": 1,
     "vue/keyword-spacing": 1,
     "vue/no-empty-pattern": 2,
-    "vue/no-extra-parens": 1,
+    "vue/no-extra-parens": [1, "functions"],
     "vue/no-irregular-whitespace": 2,
     "vue/no-loss-of-precision": 2,
     "vue/no-sparse-arrays": 2,
