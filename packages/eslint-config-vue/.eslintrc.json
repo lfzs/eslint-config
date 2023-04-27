@@ -20,7 +20,6 @@
     "vue/match-component-import-name": 1,
     "vue/next-tick-style": 1,
     "vue/no-multiple-objects-in-class": 1,
-    "vue/no-potential-component-option-typo": 1,
     "vue/no-ref-object-destructure": 1,
     "vue/no-undef-properties": 2,
     "vue/no-useless-mustaches": 1,

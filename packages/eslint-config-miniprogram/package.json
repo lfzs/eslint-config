@@ -1,6 +1,6 @@
 {
   "name": "@jzfe/eslint-config-miniprogram",
-  "version": "1.6.9",
+  "version": "1.6.10",
   "main": "index.js",
   "files": [
     ".eslintrc.json",
