@@ -1,6 +1,6 @@
 {
   "name": "@jzfe/eslint-config-vanilla",
-  "version": "1.6.11",
+  "version": "1.6.12",
   "main": "index.js",
   "files": [
     ".eslintrc.json",
@@ -10,6 +10,6 @@
   "license": "ISC",
   "homepage": "https://github.com/lfzs/eslint-config#readme",
   "dependencies": {
-    "eslint-plugin-check-file": "^2.2.0"
+    "eslint-plugin-check-file": "^2.3.0"
   }
 }
