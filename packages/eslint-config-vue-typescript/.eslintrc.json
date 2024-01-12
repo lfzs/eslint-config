@@ -1,25 +1,78 @@
 {
   "extends": [
     "@jzfe/eslint-config-vue",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
+  // "plugins": ["@typescript-eslint"],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    // "project": "./tsconfig.json"
+  },
   "rules": {
-    "@typescript-eslint/explicit-module-boundary-types": 0,
-    "@typescript-eslint/member-delimiter-style": [2, { "multiline": { "delimiter": "comma" }, "singleline": { "delimiter": "comma" } }],
+    "@typescript-eslint/array-type": 1,
+    // "class-literal-property-style": 2,
+    "@typescript-eslint/consistent-generic-constructors": 1,
+    "@typescript-eslint/consistent-indexed-object-style": 1,
+    "@typescript-eslint/consistent-type-assertions": 1,
+    "@typescript-eslint/consistent-type-definitions": 1,
+    "@typescript-eslint/consistent-type-imports": 1,
+    "@typescript-eslint/method-signature-style": 1,
+    "@typescript-eslint/no-base-to-string": 1,
+    "@typescript-eslint/no-confusing-non-null-assertion": 2,
+    "@typescript-eslint/no-duplicate-enum-values": 2,
+    "@typescript-eslint/no-duplicate-type-constituents": 2,
+    "@typescript-eslint/no-dynamic-delete": 2,
     "@typescript-eslint/no-explicit-any": 0,
-    "@typescript-eslint/type-annotation-spacing": 2,
+    "@typescript-eslint/no-import-type-side-effects": 2,
+    "@typescript-eslint/no-invalid-void-type": 2,
+    "@typescript-eslint/no-meaningless-void-operator": 1,
+    "@typescript-eslint/no-mixed-enums": 2,
+    "@typescript-eslint/no-non-null-asserted-nullish-coalescing": 1,
+    "@typescript-eslint/no-non-null-asserted-optional-chain": 1,
+    "@typescript-eslint/no-redundant-type-constituents": 2,
+    "@typescript-eslint/no-require-imports": 2,
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": 2,
+    "@typescript-eslint/no-unnecessary-condition": 1,
+    "@typescript-eslint/no-unnecessary-qualifier": 1,
+    "@typescript-eslint/no-unnecessary-type-arguments": 1,
+    "@typescript-eslint/no-unnecessary-type-assertion": 1,
+    "@typescript-eslint/no-unnecessary-type-constraint": 1,
+    "@typescript-eslint/no-unsafe-declaration-merging": 2,
+    "@typescript-eslint/no-unsafe-enum-comparison": 2,
+    "@typescript-eslint/no-useless-empty-export": 1,
+    "@typescript-eslint/non-nullable-type-assertion-style": 1,
+    "@typescript-eslint/prefer-enum-initializers": 2,
+    "@typescript-eslint/prefer-function-type": 1,
+    "@typescript-eslint/prefer-literal-enum-member": 2,
+    "@typescript-eslint/prefer-nullish-coalescing": 1,
+    "@typescript-eslint/prefer-optional-chain": 2,
+    "@typescript-eslint/prefer-readonly": 1,
+    "@typescript-eslint/prefer-readonly-parameter-types": 2,
+    "@typescript-eslint/prefer-reduce-type-parameter": 2,
+    "@typescript-eslint/prefer-string-starts-ends-with": 1,
+    "@typescript-eslint/prefer-ts-expect-error": 1,
+    "@typescript-eslint/require-array-sort-compare": 2,
+    "@typescript-eslint/restrict-plus-operands": 2,
+    "@typescript-eslint/strict-boolean-expressions": 2,
+    "@typescript-eslint/switch-exhaustiveness-check": 2,
+    "@typescript-eslint/unified-signatures": 1,
 
-    "func-call-spacing": 0,
-    "@typescript-eslint/func-call-spacing": 2,
+    "@typescript-eslint/member-delimiter-style": [2, { "multiline": { "delimiter": "comma" }, "singleline": { "delimiter": "comma" } }],
+    // "@typescript-eslint/type-annotation-spacing": 2,
 
-    "no-dupe-class-members": 0,
-    "@typescript-eslint/no-dupe-class-members": 2
+    // "func-call-spacing": 0,
+    // "@typescript-eslint/func-call-spacing": 2,
+
+    // "no-dupe-class-members": 0,
+    // "@typescript-eslint/no-dupe-class-members": 2
   },
   "overrides": [
     {
-      "files": ["*.js"],
+      "files": ["*.cjs"],
       "rules": {
-        "@typescript-eslint/no-var-requires": 0
+        // "@typescript-eslint/no-var-requires": 0
       }
     }
   ]

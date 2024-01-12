@@ -1,6 +1,8 @@
 {
   "extends": [
     "@jzfe/eslint-config-vanilla",
+    // 默认就是使用 vue-eslint-parser 解析器
+    // https://eslint.vuejs.org/user-guide/#parser-options
     "plugin:vue/vue3-strongly-recommended"
   ],
   "rules": {
@@ -57,12 +59,5 @@
     "vue/max-attributes-per-line": [2, { "singleline": 5 }],
     "vue/multiline-html-element-content-newline": [2, { "allowEmptyLines": true }],
     "vue/singleline-html-element-content-newline": 0
-  },
-  "globals": {
-    "defineProps": "readonly",
-    "defineEmits": "readonly",
-    "defineExpose": "readonly",
-    "defineOptions": "readonly",
-    "withDefaults": "readonly"
   }
 }

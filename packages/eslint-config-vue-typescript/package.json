@@ -1,6 +1,6 @@
 {
   "name": "@jzfe/eslint-config-vue-typescript",
-  "version": "1.6.12",
+  "version": "1.6.13",
   "main": "index.js",
   "files": [
     ".eslintrc.json",
@@ -11,6 +11,8 @@
   "homepage": "https://github.com/lfzs/eslint-config#readme",
   "dependencies": {
     "@jzfe/eslint-config-vue": "workspace:*",
-    "@typescript-eslint/eslint-plugin": "^5.59.5"
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "vue-eslint-parser": "^9.4.0"
   }
 }
