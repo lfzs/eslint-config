@@ -1,8 +1,6 @@
 {
   "extends": [
     "@jzfe/eslint-config-vanilla",
-    // 默认就是使用 vue-eslint-parser 解析器
-    // https://eslint.vuejs.org/user-guide/#parser-options
     "plugin:vue/vue3-strongly-recommended"
   ],
   "rules": {
