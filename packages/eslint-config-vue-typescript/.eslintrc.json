@@ -4,15 +4,12 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
-  // "plugins": ["@typescript-eslint"],
   "parser": "vue-eslint-parser",
   "parserOptions": {
-    "parser": "@typescript-eslint/parser",
-    // "project": "./tsconfig.json"
+    "parser": "@typescript-eslint/parser"
   },
   "rules": {
     "@typescript-eslint/array-type": 1,
-    // "class-literal-property-style": 2,
     "@typescript-eslint/consistent-generic-constructors": 1,
     "@typescript-eslint/consistent-indexed-object-style": 1,
     "@typescript-eslint/consistent-type-assertions": 1,
@@ -59,21 +56,12 @@
     "@typescript-eslint/switch-exhaustiveness-check": 2,
     "@typescript-eslint/unified-signatures": 1,
 
-    "@typescript-eslint/member-delimiter-style": [2, { "multiline": { "delimiter": "comma" }, "singleline": { "delimiter": "comma" } }],
-    // "@typescript-eslint/type-annotation-spacing": 2,
-
-    // "func-call-spacing": 0,
-    // "@typescript-eslint/func-call-spacing": 2,
-
-    // "no-dupe-class-members": 0,
-    // "@typescript-eslint/no-dupe-class-members": 2
+    "@typescript-eslint/member-delimiter-style": [2, { "multiline": { "delimiter": "comma" }, "singleline": { "delimiter": "comma" } }]
   },
   "overrides": [
     {
       "files": ["*.cjs"],
-      "rules": {
-        // "@typescript-eslint/no-var-requires": 0
-      }
+      "rules": {}
     }
   ]
 }
