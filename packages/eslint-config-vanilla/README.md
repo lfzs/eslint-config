@@ -1,6 +1,6 @@
 # @jzfe/eslint-config-vanilla
 
-原生 JavaScript/Node 项目使用
+原生 JavaScript 项目使用
 
 ## 可用的 Rules
 
