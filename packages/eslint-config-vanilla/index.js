@@ -6,24 +6,25 @@ export default [
   {
     files: ['src/**/*'],
     plugins: {
-      'check-file': checkFile
+      'check-file': checkFile,
     },
     rules: {
       'check-file/filename-naming-convention': [2, {
         'src/**/*.{vue,jsx,tsx}': 'PASCAL_CASE',
-        'src/**/*.{js,ts}': 'CAMEL_CASE'
+        'src/**/*.{js,ts}': 'CAMEL_CASE',
       }],
       'check-file/folder-naming-convention': [2, {
         'src/**/': 'CAMEL_CASE'
       }],
-    }
+    },
   },
   {
+    files: ['**/*.js', '**/*.jsx'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
-        ...globals.browser
+        ...globals.browser,
       },
       parserOptions: {
         ecmaFeatures: {
@@ -74,6 +75,6 @@ export default [
       'prefer-rest-params': 1,
       'prefer-template': 1,
       'require-await': 1,
-    }
+    },
   },
 ]
