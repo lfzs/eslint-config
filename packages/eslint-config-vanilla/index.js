@@ -34,6 +34,7 @@ export default [
     },
     rules: {
       'array-callback-return': 2,
+      'no-async-promise-executor': 0,
       'no-constructor-return': 2,
       'no-duplicate-imports': 2,
       'no-inner-declarations': 2,
