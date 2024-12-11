@@ -52,7 +52,11 @@ export default [
       '@stylistic/jsx': stylisticJsx
     },
     rules: {
-      '@stylistic/jsx/jsx-pascal-case': 2
+      '@stylistic/jsx/jsx-pascal-case': 2,
+      // 在 .jsx 中忽略。因为无法检测到组件被使用
+      // https://github.com/eslint-stylistic/eslint-stylistic/issues/547
+      // https://eslint.vuejs.org/rules/jsx-uses-vars.html#vue-jsx-uses-vars
+      'no-unused-vars': 0,
     }
   },
 ]
