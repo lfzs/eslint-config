@@ -10,7 +10,7 @@ export default [
       'vue/multi-word-component-names': 0,
       'vue/no-watch-after-await': 0,
       'vue/attribute-hyphenation': [1, 'never'],
-      'vue/max-attributes-per-line': [2, { singleline: 3 }],
+      'vue/max-attributes-per-line': 0, // 和 prettier printWidth 冲突
       'vue/prop-name-casing': 0,
       'vue/singleline-html-element-content-newline': 0,
       'vue/v-on-event-hyphenation': [1, 'never'],
