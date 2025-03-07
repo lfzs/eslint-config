@@ -44,7 +44,6 @@ export default [
       'no-unmodified-loop-condition': 2,
       'no-unreachable-loop': 2,
       'no-useless-assignment': 2,
-      'require-atomic-updates': 2,
 
       'class-methods-use-this': 1,
       'dot-notation': 1,
