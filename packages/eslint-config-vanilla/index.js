@@ -4,35 +4,6 @@ import checkFile from 'eslint-plugin-check-file'
 export default [
   js.configs.recommended,
   {
-    files: ['src/**/*'],
-    plugins: {
-      'check-file': checkFile,
-    },
-    rules: {
-      'check-file/filename-naming-convention': [2, {
-        'src/**/*.{vue,jsx,tsx}': 'PASCAL_CASE',
-        'src/**/*.{js,ts}': 'CAMEL_CASE',
-      }],
-      'check-file/folder-naming-convention': [2, {
-        'src/**/': 'CAMEL_CASE'
-      }],
-    },
-  },
-  {
-    files: ['**/*.js', '**/*.jsx'],
-    languageOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module',
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-    },
     rules: {
       'array-callback-return': 2,
       'no-async-promise-executor': 0,
@@ -76,6 +47,37 @@ export default [
       'prefer-rest-params': 1,
       'prefer-template': 1,
       'require-await': 1,
+    },
+  },
+  {
+    ignores: ['dist'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
+  },
+  {
+    files: ['src/**/*'],
+    plugins: {
+      'check-file': checkFile,
+    },
+    rules: {
+      'check-file/filename-naming-convention': [2, {
+        'src/**/*.{vue,jsx,tsx}': 'PASCAL_CASE',
+        'src/**/*.{js,ts}': 'CAMEL_CASE',
+      }],
+      'check-file/folder-naming-convention': [2, {
+        'src/**/': 'CAMEL_CASE'
+      }],
     },
   },
 ]
