@@ -12,6 +12,7 @@ export default [
       'vue/attribute-hyphenation': [1, 'never'],
       'vue/html-self-closing': 0,
       'vue/max-attributes-per-line': 0, // 和 prettier printWidth 冲突
+      'vue/one-component-per-file': 0,
       'vue/prop-name-casing': 0,
       'vue/singleline-html-element-content-newline': 0,
       'vue/v-on-event-hyphenation': [1, 'never'],
