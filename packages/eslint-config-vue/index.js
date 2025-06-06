@@ -1,6 +1,5 @@
 import pluginVue from 'eslint-plugin-vue'
 import configVanilla from '@jzfe/eslint-config-vanilla'
-import stylisticJsx from '@stylistic/eslint-plugin-jsx'
 
 export default [
   ...configVanilla,
@@ -47,18 +46,5 @@ export default [
       'vue/no-useless-concat': 1,
       'vue/prefer-template': 1,
     },
-  },
-  {
-    files: ['**/*.jsx'],
-    plugins: {
-      '@stylistic/jsx': stylisticJsx
-    },
-    rules: {
-      '@stylistic/jsx/jsx-pascal-case': 2,
-      // 在 .jsx 中忽略。因为无法检测到组件被使用
-      // https://github.com/eslint-stylistic/eslint-stylistic/issues/547
-      // https://eslint.vuejs.org/rules/jsx-uses-vars.html#vue-jsx-uses-vars
-      'no-unused-vars': 0,
-    }
   },
 ]
