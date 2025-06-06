@@ -1,6 +1,6 @@
 {
   "name": "@jzfe/eslint-config-vue",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "main": "index.js",
   "type": "module",
   "files": [
@@ -11,7 +11,7 @@
   "homepage": "https://github.com/lfzs/eslint-config#readme",
   "dependencies": {
     "@jzfe/eslint-config-vanilla": "workspace:*",
-    "@stylistic/eslint-plugin-jsx": "^4.2.0",
-    "eslint-plugin-vue": "^10.0.0"
+    "@stylistic/eslint-plugin-jsx": "^4.4.1",
+    "eslint-plugin-vue": "^10.2.0"
   }
 }
