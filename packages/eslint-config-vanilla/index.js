@@ -1,9 +1,25 @@
 import js from '@eslint/js'
+import { defineConfig } from 'eslint/config'
 import globals from 'globals'
 import checkFile from 'eslint-plugin-check-file'
-export default [
-  js.configs.recommended,
+
+export default defineConfig([
   {
+    files: ['**/*.{js,jsx}'],
+    ignores: ['dist'],
+    plugins: { js },
+    extends: ['js/recommended'],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
     rules: {
       'array-callback-return': 2,
       'no-async-promise-executor': 0,
@@ -50,22 +66,6 @@ export default [
     },
   },
   {
-    ignores: ['dist'],
-    languageOptions: {
-      ecmaVersion: 'latest',
-      sourceType: 'module',
-      globals: {
-        ...globals.browser,
-        ...globals.node,
-      },
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-    },
-  },
-  {
     files: ['src/**/*'],
     plugins: {
       'check-file': checkFile,
@@ -80,5 +80,12 @@ export default [
       }],
     },
   },
-  { ignores: ['dist'] },
-]
+  {
+    files: ['**/*.jsx'],
+    rules: {
+      // 在 .jsx 中忽略。因为无法检测到组件被使用
+      // https://eslint.vuejs.org/rules/jsx-uses-vars.html#vue-jsx-uses-vars
+      'no-unused-vars': 0,
+    }
+  },
+])

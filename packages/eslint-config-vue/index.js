@@ -1,10 +1,20 @@
 import pluginVue from 'eslint-plugin-vue'
+import { defineConfig } from 'eslint/config'
 import configVanilla from '@jzfe/eslint-config-vanilla'
 
-export default [
+export default defineConfig([
   ...configVanilla,
   ...pluginVue.configs['flat/strongly-recommended'],
   {
+    files: ['**/*.{js,jsx,vue}'],
+    ignores: ['dist'],
+    languageOptions: {
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
     rules: {
       'vue/multi-word-component-names': 0,
       'vue/no-watch-after-await': 0,
@@ -47,4 +57,4 @@ export default [
       'vue/prefer-template': 1,
     },
   },
-]
+])
