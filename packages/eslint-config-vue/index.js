@@ -6,7 +6,7 @@ export default defineConfig([
   ...configVanilla,
   ...pluginVue.configs['flat/strongly-recommended'],
   {
-    files: ['**/*.{js,jsx,vue}'],
+    files: ['**/*.{jsx,vue}'],
     ignores: ['dist'],
     languageOptions: {
       parserOptions: {
