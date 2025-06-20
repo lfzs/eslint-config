@@ -29,7 +29,7 @@ export default defineConfig([
       'vue/this-in-template': 2,
       'vue/block-tag-newline': 1,
       'vue/component-api-style': 2,
-      'vue/component-name-in-template-casing': 1,
+      'vue/component-name-in-template-casing': [1, 'PascalCase', { registeredComponentsOnly: false }],
       'vue/component-options-name-casing': 1,
       'vue/custom-event-name-casing': 1,
       'vue/enforce-style-attribute': 1,
